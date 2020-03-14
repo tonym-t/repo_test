@@ -8,7 +8,7 @@ bool find_shortest_path(int** maze, int N, int** path, int& path_length) {
 	*sol = new int[N*N];
 	for (int i = 0; i < N; i++)
 		sol[i] = *sol + i * N;
-    //分配空间连续的二维动态数组
+    //allocate a continuous two-dimensional dynamic array
     for (int i = 0; i < N; i++)
         for (int j = 0; j < N; j++)
         {
